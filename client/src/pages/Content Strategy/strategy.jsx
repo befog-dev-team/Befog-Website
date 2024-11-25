@@ -31,7 +31,7 @@ function strategy() {
       <div className="uiux">
         <div className="text-section">
           <h1 className="title">
-            <span className="highlight">Content Strategy</span>
+            <span className="highlight">App Development</span>
           </h1>
           <p className="subtitle">
             Improve Your Brand’s Value Proposition, Customer Engagement,

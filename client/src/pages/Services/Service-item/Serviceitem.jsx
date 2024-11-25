@@ -6,10 +6,9 @@ import { Link } from 'react-router-dom';
 const Serviceitem = ({ title, description, background, redirectUrl, icon }) => {
   return (
     <Link
-      href={redirectUrl} // Use href for native anchor navigation
+      to={redirectUrl}
       className="service-item"
       style={{ backgroundImage: `url(${background})` }}
-      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} // Scroll to top on click
     >
       <div className="content">
         <div className="icon">

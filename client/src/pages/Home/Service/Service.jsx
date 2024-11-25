@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
 const ServiceCard = ({ title, icon, description }) => {
   return (
@@ -8,6 +8,12 @@ const ServiceCard = ({ title, icon, description }) => {
       <p>{description}</p>
     </div>
   );
+};
+
+ServiceCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default ServiceCard;

@@ -65,7 +65,7 @@ const Footer = () => {
             <li><Link to="/web">Web Development</Link></li>
             <li><Link to="/digital">Digital Marketing</Link></li>
             <li><Link to="/social">Social Media Marketing</Link></li>
-            <li><Link to="/strategy">Content Strategy</Link></li>
+            <li><Link to="/strategy">App Development</Link></li>
           </ul>
         </div>
         <div className="right">
