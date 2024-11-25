@@ -38,7 +38,7 @@ a {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    margin: 0rem 0rem 0rem 2rem;
+    margin: 0 0 0 2rem;
   }
   
   .logo-container::before {
@@ -49,22 +49,23 @@ a {
     width: 68%;
     height: 100%;
     background-color: #170012;
-    opacity: 1;
-    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+    transform: translateX(0);
   }
   
   .logo-container:hover::before {
-    animation: fadeOutLeftToRight .5s ease-in-out forwards;
+    animation: fadeOutLeftToRight 0.5s ease-in-out forwards;
   }
   
   @keyframes fadeOutLeftToRight {
-    0% {
-        transform: translateX(0);
+    from {
+      transform: translateX(0);
     }
-    100% {
-        transform: translateX(100%);
+    to {
+      transform: translateX(100%);
     }
-}
+  }
+  
 
 @media (max-width: 768px) {
   .logo-container {
