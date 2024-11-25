@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./strategy.css";
 
 const services = [
@@ -36,9 +37,9 @@ function strategy() {
             Improve Your Brand’s Value Proposition, Customer Engagement,
             Retention, and Sales with Growth-Oriented Content Marketing Strategy
           </p>
-          <a href="/contact">
+          <Link to="/contact">
             <button style={{ cursor: 'pointer' }} className="contact-button">Get in Touch</button>
-          </a>
+          </Link>
         </div>
         <div className="image-section">
           <div className="ui-img">

@@ -1,10 +1,11 @@
 // src/Serviceitem.js
-import React from 'react';
+import PropTypes from 'prop-types';
 import './Serviceitem.css';
+import { Link } from 'react-router-dom';
 
 const Serviceitem = ({ title, description, background, redirectUrl, icon }) => {
   return (
-    <a
+    <Link
       href={redirectUrl} // Use href for native anchor navigation
       className="service-item"
       style={{ backgroundImage: `url(${background})` }}
@@ -17,8 +18,16 @@ const Serviceitem = ({ title, description, background, redirectUrl, icon }) => {
         <h2>{title}</h2>
         <p>{description}</p>
       </div>
-    </a>
+    </Link>
   );
+};
+
+Serviceitem.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  background: PropTypes.string.isRequired,
+  redirectUrl: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 export default Serviceitem;

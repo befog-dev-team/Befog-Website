@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./paid.css";
 
 const services = [
@@ -36,9 +37,9 @@ function paid() {
             Build, Grow, and Boost your business revenue by focusing on core
             strategy — attract, convert, and retain customers forever!!!
           </p>
-          <a href="/contact">
+          <Link to="/contact">
             <button style={{ cursor: 'pointer' }} className="contact-button">Get in Touch</button>
-          </a>
+          </Link>
         </div>
         <div className="image-section">
           <div className="ui-img">

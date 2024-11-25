@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Digital.css';
 
 const services = [
@@ -40,9 +41,9 @@ function Digital() {
             Nurture Your Vision, Magnify Your Brand & Increase Your Sales with
             Inspiring Digital Marketing Solutions
           </p>
-          <a href="/contact">
+          <Link to="/contact">
             <button style={{ cursor: 'pointer' }} className="contact-button">Get in Touch</button>
-          </a>
+          </Link>
         </div>
         <div className="image-section">
           <div className="ui-img">

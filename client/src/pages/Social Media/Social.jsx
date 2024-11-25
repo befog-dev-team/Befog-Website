@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Social.css";
 
 const services = [
@@ -36,9 +37,9 @@ function Social() {
             Improve Your Market Reach. Build Loyal Customers - with Creative and
             Intelligent Social Media Marketing Strategies
           </p>
-          <a href="/contact">
+          <Link to="/contact">
             <button style={{ cursor: 'pointer' }} className="contact-button">Get in Touch</button>
-          </a>
+          </Link>
         </div>
         <div className="image-section">
           <div className="ui-img">

@@ -13,6 +13,7 @@ import weui from "../../assets/img/s-ui.png";
 import wedev from "../../assets/img/s-web.png";
 import wedeg from "../../assets/img/s-deg.png";
 import webus from "../../assets/img/w-bus.png";
+import { Link } from "react-router-dom";
 
 const serviceitem = [
   {
@@ -109,9 +110,9 @@ const Services = () => {
             <Serviceitem key={index} {...service} />
           ))}
         </div>
-        <a href="/contact">
+        <Link to="/contact">
           <button style={{ cursor: 'pointer' }} className="consult-button">Book Free Consultant</button>
-        </a>
+        </Link>
       </div>
       <div className="contact">
         <div className="callUs">
@@ -130,9 +131,9 @@ const Services = () => {
         </div>
       </div>
       <p className="last-text">Grow your careers at the heart of change</p>
-      <a href="/contact">
+      <Link to="/contact">
         <button style={{ cursor: 'pointer' }} className="cta-button">Get in Touch</button>
-      </a>
+      </Link>
     </div>
   );
 };

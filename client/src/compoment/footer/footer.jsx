@@ -7,6 +7,7 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./footer.css";
 import logo from "../../assets/picsvg.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -51,20 +52,20 @@ const Footer = () => {
         <div className="left">
           <p className="footer-p">Company</p>
           <ul className="footer-ul">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
         <div className="center">
           <p className="footer-p">Services</p>
           <ul className="footer-ul">
-            <li><a href="/uiux">UI/UX</a></li>
-            <li><a href="/web">Web Development</a></li>
-            <li><a href="/digital">Digital Marketing</a></li>
-            <li><a href="/social">Social Media Marketing</a></li>
-            <li><a href="/strategy">Content Strategy</a></li>
+            <li><Link to="/uiux">UI/UX</Link></li>
+            <li><Link to="/web">Web Development</Link></li>
+            <li><Link to="/digital">Digital Marketing</Link></li>
+            <li><Link to="/social">Social Media Marketing</Link></li>
+            <li><Link to="/strategy">Content Strategy</Link></li>
           </ul>
         </div>
         <div className="right">

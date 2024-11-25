@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./uiux.css";
 
 const services = [
@@ -35,9 +36,9 @@ function uiux() {
             Launch Iconic Brands at the Intersection of Creativity and
             Technology!!!
           </p>
-          <a href="/contact">
+          <Link to="/contact">
             <button  style={{cursor: 'pointer'}} className="contact-button">Get in Touch</button>
-          </a>
+          </Link>
         </div>
         <div className="image-section">
           <div className="ui-img">

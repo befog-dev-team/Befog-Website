@@ -127,11 +127,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="/">
+      <Link to="/">
         <div className="logo-container">
           <img src={logo} alt="Befog Logo" className="logo" />
         </div>
-      </a>
+      </Link>
 
       <ul
         className={isOpen ? "nav-links open" : "nav-links"}

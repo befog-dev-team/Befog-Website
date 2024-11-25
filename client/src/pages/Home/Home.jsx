@@ -13,6 +13,7 @@ import secback from "../../assets/img/bg5.jpg";
 import thirdback from "../../assets/img/bg6.jpg";
 import fourthback from "../../assets/img/bg55.jpg";
 import founder from "../../assets/img/sanjay-sir.webp";
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -118,9 +119,9 @@ const Home = () => {
           Build a Distinctive Digital Identity: Where Strategy Meets Creativity
           to Define Your Unique Online Presence.
         </p>
-        <a href="/contact">
+        <Link to="/contact">
           <button style={{cursor: 'pointer'}} className="cta-button">Get in Touch</button>
-        </a>
+        </Link>
         <div className="slider-controls">
           <button className="prev-button" onClick={handlePrev}>
             ←

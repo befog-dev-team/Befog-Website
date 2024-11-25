@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Business.css'
 
 const services = [
@@ -46,9 +47,9 @@ function Business() {
             Let’s Navigate Your Business
             Challenges Together
           </p>
-          <a href="/contact">
+          <Link to="/contact">
             <button style={{cursor: 'pointer'}} className="contact-button">Get in Touch</button>
-          </a>
+          </Link>
         </div>
         <div className="image-section">
           <div className="ui-img">

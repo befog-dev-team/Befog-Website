@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Web.css";
 
 const services = [
@@ -39,9 +40,9 @@ function Web() {
             We are Creative Nerds. We are Technocrats. But We are Passionate
             about creating a Successful Brand for You!!!
           </p>
-          <a href="/contact">
-            <button style={{cursor: 'pointer'}} className="contact-button">Get in Touch</button>
-          </a>
+          <Link to="/contact">
+            <button style={{ cursor: 'pointer' }} className="contact-button">Get in Touch</button>
+          </Link>
         </div>
         <div className="image-section">
           <div className="ui-img">
