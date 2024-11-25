@@ -18,7 +18,7 @@ function Contact() {
 
   // Google Sheet Integration
   const handleSubmitGoogleForm = async () => {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyRl6DC7lpk_qby1vyEHWCqb7bq_IJmTtkXwgDkpwGWO7zzVRo97_V598BVDxHv6AycmA/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfMNUmGl3jeJkgR5I2wQAzv3F3xMU8efSRu448GOOeuAWeFvS6cUKnyZFfWfXNGpRJ/exec'
     const form = document.forms['submit-to-google-sheet'];
 
     const formData = new FormData(form);
