@@ -1,0 +1,22 @@
+.img-social {
+    width: 530px;
+    height: 360.69px;
+    background-image: url("../../assets/img/social.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (max-width: 1124px) {
+  
+    .img-social {
+        width: 450px;
+        height: 397.69px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .img-social {
+      width: 350px;
+      height: 250.69px;
+    }
+  }

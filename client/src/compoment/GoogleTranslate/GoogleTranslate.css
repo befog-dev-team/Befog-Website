@@ -1,0 +1,33 @@
+/* Google Translate CSS */
+.gt_float_switcher.notranslate {
+  background-color: #0a0412;
+}
+
+.gt_float_switcher .gt-selected .gt-current-lang {
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  background-color: #0a0412;
+}
+
+.gt_options .gt-open a {
+  color: white;
+}
+
+.gt-lang-code,
+.nturl {
+  color: white;
+}
+
+.gt_float_switcher,
+.notranslate {
+  background-color: #0a0412;
+}
+
+.gt_options {
+  background-color: #0a0412;
+}
+
+.gt_float_switcher .gt_options.gt-open {
+  background-color: #0a0412;
+}

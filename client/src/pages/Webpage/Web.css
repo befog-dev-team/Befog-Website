@@ -1,0 +1,43 @@
+.img-web {
+  width: 560px;
+  height: 397.69px;
+  background-image: url("../../assets/img/web.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1124px) {
+
+  .img-web {
+    width: 450px;
+    height: 397.69px;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-web {
+    width: 350px;
+    height: 250.69px;
+  }
+}
+
+.text-containter-web {
+    width: 94vw;
+    height: inherit;
+    gap: 0px;
+    opacity: 1;
+    padding-bottom: 2rem;
+    background: #F3F3F326;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  
+  .text-containter-web h2 {
+    margin: 1rem;
+  }
+  
+  .text-containter-web ul {
+    margin: 2rem 4rem 4rem;
+  }

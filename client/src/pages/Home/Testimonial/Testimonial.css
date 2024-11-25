@@ -1,0 +1,139 @@
+.testimonial {
+  background-color: transparent;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 10px;
+  text-align: center;
+  color: #333;
+  max-width: 80vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  background-color: #D9D9D90D;
+  padding: 70px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #FFFFFF80;
+}
+
+.testimonial-content:hover {
+  box-shadow: inset 0 0 10px 5px orange;
+}
+
+.quote-mark {
+  font-size: 2rem;
+  color: #ccc;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.testimonial-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.circle-and-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.small-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #555;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: #ffa500;
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .testimonial-content {
+    padding: 15px;
+  }
+
+  .quote-mark {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-content p {
+    font-size: 0.95rem;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .rating {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 10px;
+    margin: 8px auto;
+  }
+
+  .testimonial-content {
+    padding: 10px;
+  }
+
+  .quote-mark {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-content p {
+    font-size: 0.9rem;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .rating {
+    font-size: 0.8rem;
+  }
+}
