@@ -42,7 +42,7 @@ const serviceitem = [
     icon: soc,
   },
   {
-    title: "Content Strategy",
+    title: "App Development",
     description: "",
     redirectUrl: "/strategy",
     icon: con,

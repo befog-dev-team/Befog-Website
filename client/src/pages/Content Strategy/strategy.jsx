@@ -34,8 +34,9 @@ function strategy() {
             <span className="highlight">App Development</span>
           </h1>
           <p className="subtitle">
-            Improve Your Brand’s Value Proposition, Customer Engagement,
-            Retention, and Sales with Growth-Oriented Content Marketing Strategy
+            Empower your brand with tailored mobile and web app solutions. 
+            Enhance user engagement, drive retention, and boost sales through 
+            innovative app design and development strategies.
           </p>
           <Link to="/contact">
             <button style={{ cursor: 'pointer' }} className="contact-button">Get in Touch</button>

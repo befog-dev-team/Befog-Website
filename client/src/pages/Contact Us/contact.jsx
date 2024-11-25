@@ -138,6 +138,7 @@ function Contact() {
                 <input
                   name="Name"
                   type="text"
+                  style={{width: '18rem'}}
                   value={formData.name}
                   onChange={e => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Name"
