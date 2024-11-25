@@ -499,6 +499,9 @@ body {
   .arrowleft img {
     margin: 11rem 0.5rem 0 11rem;
   }
+  .arrowRight img {
+    margin: -4.7rem 2rem 0 32rem;
+}
 }
 
 @media (max-width: 1225px) {

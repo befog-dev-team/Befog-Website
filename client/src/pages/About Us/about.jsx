@@ -44,7 +44,9 @@ function About() {
           journeys and enable enterprises to augment their brand reach and
           engagement while achieving growth in quality demand generation.
         </p>
-        <button>View Portfolio</button>
+        <a href="https://www.linkedin.com/company/100947651/admin/dashboard/">
+          <button style={{ cursor: 'pointer' }}>View Portfolio</button>
+        </a>
       </div>
       <h2>Why are we here?</h2>
       <div className="main-container">
