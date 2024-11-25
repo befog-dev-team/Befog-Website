@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import "./strategy.css";
 
 const services = [
-  { title: "Content Production" },
-  { title: "Content Marketing" },
-  { title: "Tailored Content Creation & Marketing" },
-  { title: "Awareness, Engagement& Retention" },
+  { title: "Custom Mobile App Development" },
+  { title: "Web Application Solutions" },
+  { title: "App Maintenance and Support" },
+  { title: "Cross-Platform Development" },
 ];
 
 const workservices = [

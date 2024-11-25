@@ -206,7 +206,7 @@ body {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .section1 {
     padding: 0% 15px;
   }
@@ -532,6 +532,72 @@ body {
   margin: -4rem 11rem 0 -19rem;
 }
 
+@media (max-width: 2720px) {
+  .arrowleft1 img {
+    margin: -4.5rem 56rem 0 -19rem;
+  }
+}
+
+@media (max-width: 2670px) {
+  .arrowleft1 img {
+    margin: -4.5rem 54rem 0 -19rem;
+  }
+}
+
+@media (max-width: 2670px) {
+  .arrowleft1 img {
+    margin: -4.5rem 54rem 0 -19rem;
+  }
+}
+
+@media (max-width: 2570px) {
+  .arrowleft1 img {
+    margin: -4.5rem 51rem 0 -19rem;
+  }
+}
+
+@media (max-width: 2420px) {
+  .arrowleft1 img {
+    margin: -4.5rem 46rem 0 -19rem;
+  }
+}
+
+@media (max-width: 2220px) {
+  .arrowleft1 img {
+    margin: -4.5rem 39rem 0 -19rem;
+  }
+}
+
+@media (max-width: 2050px) {
+  .arrowleft1 img {
+    margin: -4.5rem 34rem 0 -19rem;
+  }
+}
+
+@media (max-width: 1840px) {
+  .arrowleft1 img {
+    margin: -4.5rem 27rem 0 -19rem;
+  }
+}
+
+@media (max-width: 1630px) {
+  .arrowleft1 img {
+    margin: -4.5rem 16rem 0 -19rem;
+  }
+}
+
+@media (max-width: 1460px) {
+  .arrowleft1 img {
+    margin: -4.5rem 6rem 0 -19rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .arrowleft1 img {
+    margin: -4.5rem 0rem 0 -19rem;
+  }
+}
+
 .arrowRight {
   width: 50px;
   display: flex;
@@ -543,6 +609,12 @@ body {
   max-width: 100%;
   max-height: 100%;
   margin: -4.7rem -2rem 0 32rem;
+}
+
+@media (max-width: 2720px) {
+  .arrowRight img {
+    margin: -4.7rem -38rem 0 32rem;
+  }
 }
 
 .Develop-strategy-container {
@@ -595,7 +667,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .feature-number h1 {
     font-size: 55px;
   }
@@ -857,7 +929,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .Design-number h1 {
     font-size: 55px;
   }
@@ -931,6 +1003,11 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden; /* Ensures the image stays within the circle */
+  }
+  .Support-strategy-container {
+    width: 108vw;
+    gap: 1.5rem;
+    margin: 0 0 0 6rem;
   }
 
   .Design-circle img,
