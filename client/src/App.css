@@ -1,9 +1,10 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Make sure horizontal scrolling is disabled, but vertical scroll is allowed */
-    overflow-y: scroll;
-    scroll-behavior: smooth; /* Force vertical scrolling to be enabled */
-  }
-  
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Make sure horizontal scrolling is disabled, but vertical scroll is allowed */
+  overflow-y: scroll;
+  height: auto;
+  scroll-behavior: smooth; /* Force vertical scrolling to be enabled */
+}

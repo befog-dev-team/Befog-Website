@@ -19,7 +19,7 @@ const Footer = () => {
         <p className="footer-text">Befog (A&W Technology)</p>
         <div className="social-icons">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/techapli"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -40,7 +40,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/100947651/admin/dashboard/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -71,8 +71,8 @@ const Footer = () => {
         <div className="right">
           <p className="footer-p">Get in Touch</p>
           <ul className="footer-ul">
-            <li><a href="tel:+12224547890">+1-222-454-7890</a></li>
-            <li><a href="mailto:Befog@gmail.com">Befog@gmail.com</a></li>
+            <li><a href="tel:+917985322738">+91 7985322738</a></li>
+            <li><a href="mailto:contact.us@befog.in">contact.us@befog.in</a></li>
           </ul>
         </div>
       </div>
