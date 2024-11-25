@@ -29,8 +29,8 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar />
         <ScrollToTop />
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/services' element={<Service />} />

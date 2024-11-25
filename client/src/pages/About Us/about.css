@@ -188,7 +188,7 @@
     color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    min-height: 45vh;
+    /* min-height: 45vh; */
     width: 35vw;
 }
 

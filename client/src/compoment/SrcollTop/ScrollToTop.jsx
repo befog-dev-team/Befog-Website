@@ -5,7 +5,7 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    console.log(`Navigated to ${pathname}`); // Ensure this logs the correct route.
+    console.log(`Navigated to ${pathname}`);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
 
