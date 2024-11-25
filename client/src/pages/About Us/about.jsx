@@ -1,4 +1,3 @@
-import React from "react";
 import "./about.css";
 import ServiceAbout from "./Service-About/ServiceAbout";
 import own from "../../assets/img/brain.png";

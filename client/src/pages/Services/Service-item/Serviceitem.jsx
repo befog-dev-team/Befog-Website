@@ -25,7 +25,7 @@ const Serviceitem = ({ title, description, background, redirectUrl, icon }) => {
 Serviceitem.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  background: PropTypes.string.isRequired,
+  background: PropTypes.string,
   redirectUrl: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
 };

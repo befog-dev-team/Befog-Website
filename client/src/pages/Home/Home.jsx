@@ -120,7 +120,7 @@ const Home = () => {
           to Define Your Unique Online Presence.
         </p>
         <Link to="/contact">
-          <button style={{cursor: 'pointer'}} className="cta-button">Get in Touch</button>
+          <button style={{ cursor: 'pointer' }} className="cta-button">Get in Touch</button>
         </Link>
         <div className="slider-controls">
           <button className="prev-button" onClick={handlePrev}>
@@ -274,7 +274,9 @@ const Home = () => {
               a future where technology empowers organizations to achieve their
               fullest potential.
             </p>
-            <button>Explore more</button>
+            <a href="https://www.linkedin.com/in/mehrotra30/">
+              <button style={{ cursor: 'pointer' }}>Explore more</button>
+            </a>
           </div>
           <div className="founder-img">
             <img
@@ -285,7 +287,7 @@ const Home = () => {
         </div>
       </div>
       <div className="Founder-button">
-        <button style={{cursor: "default"}}>View all Team</button>
+        <button style={{ cursor: "default" }}>View all Team</button>
       </div>
       <div className="testimonial-body">
         <div className="testimonial-section">
