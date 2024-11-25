@@ -104,7 +104,7 @@ function Contact() {
         <div className="callUs">
           <img src={whatsapp} alt="" />
           <h3>Call Us</h3>
-          <p>Support: +91 1234567890</p>
+          <p>Support: +91 7985322738</p>
         </div>
         <div className="img1">
         </div>
