@@ -75,7 +75,7 @@ const service = [
   {
     topic: "WE CONSULT",
     icon: webus,
-    title: "Business Consultancy Service",
+    title: "Tech Support/Maintenance",
     description: "Let’s Navigate Your Business Challenges Together.",
   },
 ];

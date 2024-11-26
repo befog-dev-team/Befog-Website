@@ -1,6 +1,6 @@
 import "./Contact.css";
-import whatsapp from "../../assets/img/whatsapp.png";
-import pen from "../../assets/img/pen.png";
+import whatsapp from "../../assets/img/callme.png";
+import pen from "../../assets/img/Vector.png";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";

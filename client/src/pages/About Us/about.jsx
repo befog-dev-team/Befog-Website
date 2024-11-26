@@ -36,7 +36,7 @@ function About() {
         </p>
       </div>
       <div className="img-bg">
-        <h1>A brief introduction of what we do</h1>
+        <h2>A brief introduction of what we do</h2>
         <p>
           We offer full-funnel digital marketing, web design & development
           services to help businesses gain a competitive edge. We leverage

@@ -659,6 +659,11 @@ body {
       margin: -4.7rem -5rem 0 32rem;
   }
 }
+@media (max-width: 1375px) {
+  .arrowRight img {
+      margin: -4.7rem 4rem 0 32rem;
+    }
+}
 
 @media (max-width: 1353px) {
   .arrowRight img {
