@@ -2,8 +2,8 @@
 import ServiceCard from "./ServicesCard/ServicesCard";
 import "./services.css";
 import Serviceitem from "./Service-item/Serviceitem";
-import whatsapp from "../../assets/img/whatsapp.png";
-import pen from "../../assets/img/pen.png";
+import whatsapp from "../../assets/img/callme.png";
+import pen from "../../assets/img/Vector.png";
 import ui from "../../assets/img/uiux.png";
 import web from "../../assets/img/web.png";
 import dig from "../../assets/img/digital.png";
@@ -76,7 +76,7 @@ const service = [
     topic: "WE CONSULT",
     icon: webus,
     title: "Tech Support/Maintenance",
-    description: "Let’s Navigate Your Business Challenges Together.",
+    description: "Reliable support and maintenance to keep your systems running smoothly and securely.",
   },
 ];
 
