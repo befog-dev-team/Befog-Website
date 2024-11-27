@@ -8,10 +8,11 @@ import strategy5 from "../../assets/img/strategy5.png";
 import support from "../../assets/img/support.png";
 import design5 from "../../assets/img/design-thinking.png";
 import feature from "../../assets/img/coding.png";
-import background from "../../assets/img/bg.png";
-import secback from "../../assets/img/bg5.jpg";
-import thirdback from "../../assets/img/bg6.jpg";
 import fourthback from "../../assets/img/bg55.jpg";
+import back5 from "../../assets/img/back5.jpg";
+import back55 from "../../assets/img/back55.jpg";
+import back555 from "../../assets/img/back555.jpg";
+import back5555 from "../../assets/img/back5555.jpg";
 import founder from "../../assets/img/sanjay-sir.webp";
 import { Link } from 'react-router-dom';
 
@@ -83,20 +84,23 @@ const services = [
 
 const Home = () => {
   const images = [
-    background,
-    secback,
-    thirdback,
     fourthback,
+    back5,
+    back55,
+    back555,
+    back5555,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
-
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   };
 
   useEffect(() => {
@@ -108,29 +112,43 @@ const Home = () => {
   }, [images.length]);
 
 
+
   return (
     <header className="header">
+      <div className="carousel">
+      <button className="arrow left-arrow" onClick={handlePrev}>
+        ←
+      </button>
       <div
-        className="section1"
-        style={{ backgroundImage: `url(${images[currentIndex]})` }}
+        className="carousel-images"
+        style={{
+          backgroundImage: `url(${images[currentIndex]})`,
+        }}
       >
-        <h1>Design Your Digital Identity</h1>
-        <p>
-          Build a Distinctive Digital Identity: Where Strategy Meets Creativity
-          to Define Your Unique Online Presence.
-        </p>
-        <Link to="/contact">
-          <button style={{ cursor: 'pointer' }} className="cta-button">Get in Touch</button>
-        </Link>
-        <div className="slider-controls">
-          <button className="prev-button" onClick={handlePrev}>
-            ←
-          </button>
-          <button className="next-button" onClick={handleNext}>
-            →
-          </button>
+        <div className="carousel-content">
+          <h1>Design Your Digital Identity</h1>
+          <p>
+            Build a Distinctive Digital Identity: Where Strategy Meets Creativity
+            to Define Your Unique Online Presence.
+          </p>
+          <Link to="/contact">
+            <button className="cta-button">Get in Touch</button>
+          </Link>
         </div>
       </div>
+      <button className="arrow right-arrow" onClick={handleNext}>
+        →
+      </button>
+      <div className="indicators">
+        {images.map((_, idx) => (
+          <div
+            key={idx}
+            className={`circle ${currentIndex === idx ? "active" : ""}`}
+            onClick={() => setCurrentIndex(idx)}
+          ></div>
+        ))}
+      </div>
+    </div>
 
       <div className="section2">
         <h1>We are one of the most effective Tech Solution Company</h1>
