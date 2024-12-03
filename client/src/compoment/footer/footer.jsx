@@ -26,14 +26,14 @@ const Footer = () => {
             <FontAwesomeIcon icon={faFacebookF} className="icon" />
           </a>
           <a
-            href="https://x.com"
+            href="https://x.com/home?lang=en"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faXTwitter} className="icon" />
           </a>
           <a
-            href="mailto:Befog@gmail.com"
+            href="mailto:contact.us@befog.in"
             target="_blank"
             rel="noopener noreferrer"
           >
