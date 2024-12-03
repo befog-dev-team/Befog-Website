@@ -8,11 +8,10 @@ import strategy5 from "../../assets/img/strategy5.png";
 import support from "../../assets/img/support.png";
 import design5 from "../../assets/img/design-thinking.png";
 import feature from "../../assets/img/coding.png";
-import fourthback from "../../assets/img/bg55.jpg";
-import back5 from "../../assets/img/back5.jpg";
+import back12 from "../../assets/img/bg12.jpg"
 import back55 from "../../assets/img/back55.jpg";
-import back555 from "../../assets/img/back555.jpg";
 import back5555 from "../../assets/img/back5555.jpg";
+import v from "../../assets/v.mp4"
 import founder from "../../assets/img/sanjay-sir.webp";
 import { Link } from 'react-router-dom';
 
@@ -82,73 +81,104 @@ const services = [
 //   },
 // ];
 
-const Home = () => {
-  const images = [
-    fourthback,
-    back5,
-    back55,
-    back555,
-    back5555,
-  ];
+const images = [
+  { type: "video", src: v }, // Video
+  { type: "image", src: back12 },
+  { type: "image", src: back55 },
+  { type: "image", src: back5555 },
+];
 
+const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+   useEffect(() => {
+    const preloadImages = () => {
+      images.forEach((item) => {
+        if (item.type === "image") {
+          const img = new Image();
+          img.src = item.src;
+        }
+      });
+    };
+    preloadImages();
+  }, []);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
   useEffect(() => {
+    if (isPaused) return;
+
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [isPaused, images.length]);
 
+  const handleVideoEnd = () => {
+    setIsPaused(false);
+    handleNext();
+  };
 
+  const handlePause = () => setIsPaused(true);
+  const handleResume = () => setIsPaused(false);
 
   return (
     <header className="header">
       <div className="carousel">
-      <button className="arrow left-arrow" onClick={handlePrev}>
-        ←
-      </button>
-      <div
-        className="carousel-images"
-        style={{
-          backgroundImage: `url(${images[currentIndex]})`,
-        }}
-      >
-        <div className="carousel-content">
-          <h1>Design Your Digital Identity</h1>
-          <p>
-            Build a Distinctive Digital Identity: Where Strategy Meets Creativity
-            to Define Your Unique Online Presence.
-          </p>
-          <Link to="/contact">
-            <button className="cta-button">Get in Touch</button>
-          </Link>
+        <button className="arrow left-arrow" onClick={handlePrev}>
+          ←
+        </button>
+        <div className="carousel-images">
+          {images[currentIndex].type === "video" ? (
+            <video
+              src={images[currentIndex].src}
+              className="carousel-video"
+              autoPlay
+              muted
+              preload="metadata" // Lazy load video
+              onPlay={handlePause}
+              onEnded={handleVideoEnd}
+            ></video>
+          ) : (
+            <div
+              style={{
+                backgroundImage: `url(${images[currentIndex].src})`,
+              }}
+              className="carousel-image lazyload" // Lazy load image
+            ></div>
+          )}
+          <div className="carousel-content">
+            <h1>Design Your Digital Identity</h1>
+            <p>
+              Build a Distinctive Digital Identity: Where Strategy Meets
+              Creativity to Define Your Unique Online Presence.
+            </p>
+            <Link to="/contact">
+              <button className="cta-button">Get in Touch</button>
+            </Link>
+          </div>
+        </div>
+        <button className="arrow right-arrow" onClick={handleNext}>
+          →
+        </button>
+        <div className="indicators">
+          {images.map((_, idx) => (
+            <div
+              key={idx}
+              className={`circle ${currentIndex === idx ? "active" : ""}`}
+              onClick={() => setCurrentIndex(idx)}
+            ></div>
+          ))}
         </div>
       </div>
-      <button className="arrow right-arrow" onClick={handleNext}>
-        →
-      </button>
-      <div className="indicators">
-        {images.map((_, idx) => (
-          <div
-            key={idx}
-            className={`circle ${currentIndex === idx ? "active" : ""}`}
-            onClick={() => setCurrentIndex(idx)}
-          ></div>
-        ))}
-      </div>
-    </div>
 
       <div className="section2">
         <h1>We are one of the most effective Tech Solution Company</h1>
