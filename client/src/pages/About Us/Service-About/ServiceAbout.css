@@ -100,10 +100,6 @@
   .service-item-about {
     width: 90vw;
   }
-  .service-item-about .icon {
-    width: 80px;
-    height: 80px;
-    font-size: 1.2rem;
-  }
+  
 }
 
