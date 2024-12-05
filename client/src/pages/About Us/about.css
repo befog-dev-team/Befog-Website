@@ -175,6 +175,7 @@
     align-items: center;
     margin-top: 20px;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .main-container > div {

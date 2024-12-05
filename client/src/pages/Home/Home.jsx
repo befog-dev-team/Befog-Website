@@ -296,9 +296,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="button">
+      {/* <div className="button">
         <button>GET STARTED</button>
-      </div>
+      </div> */}
       <div className="Founder">
         <h1>Meet the Founder</h1>
         <div className="pointer">

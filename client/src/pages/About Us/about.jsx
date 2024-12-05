@@ -1,26 +1,26 @@
 import "./about.css";
 import ServiceAbout from "./Service-About/ServiceAbout";
-import own from "../../assets/img/brain.png";
-import bulb from "../../assets/img/bulb-light.png";
-import time from "../../assets/img/time-management.png"
+import own from "../../assets/img/consumer-centric.png";
+import bulb from "../../assets/img/trust.png";
+import time from "../../assets/img/professional.png"
 
 const serviceabout = [
   {
-    title: "Ownership",
+    title: "Client-Centric Approach",
     description:
-      "We take full responsibility for our actions. We apologize for our mistakes and work with more sincerity and dedication to delight our customers.",
+      "Our services are personalized to ensure customer satisfaction and achieve desired results efficiently.",
     icon:own,
   },
   {
-    title: "Think Smarter and Bigger",
+    title: "Transparency and Trust",
     description:
-      "We constantly strive for improvement and growth. We embrace change, adopt it, and find solutions to improve ourselves.",
+      "Clear communication, ethical practices, and commitment to deadlines build strong client relationships.",
     icon:bulb,
   },
   {
-    title: "Work Ethic",
+    title: "Skilled Workforce",
     description:
-      "We are proactive, organized, result-driven, and prompt because we expect high performance from ourselves. Consequently, we regularly invest in training to create a highly skilled and efficient talent pool.",
+      "Our team comprises experienced professionals dedicated to delivering excellence in every project.",
     icon:time,
   },
 ];
@@ -44,9 +44,9 @@ function About() {
           journeys and enable enterprises to augment their brand reach and
           engagement while achieving growth in quality demand generation.
         </p>
-        <a href="https://www.linkedin.com/company/100947651/admin/dashboard/">
+        {/* <a href="https://www.linkedin.com/company/100947651/admin/dashboard/">
           <button style={{ cursor: 'pointer' }}>View Portfolio</button>
-        </a>
+        </a> */}
       </div>
       <h2>Why are we here?</h2>
       <div className="main-container">
