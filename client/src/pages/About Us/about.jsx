@@ -1,8 +1,8 @@
 import "./about.css";
 import ServiceAbout from "./Service-About/ServiceAbout";
-import own from "../../assets/img/consumer-centric.png";
-import bulb from "../../assets/img/trust.png";
-import time from "../../assets/img/professional.png"
+import own from "../../assets/img/customer-centricity_16911946.png";
+import bulb from "../../assets/img/transparency_17835391.png";
+import time from "../../assets/img/partnership-development_18275570.png"
 
 const serviceabout = [
   {
