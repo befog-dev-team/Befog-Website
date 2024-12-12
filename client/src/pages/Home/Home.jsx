@@ -342,14 +342,14 @@ const Home = () => {
           <h1>What client says about us</h1>
           <div className="testimonials">
             <Testimonial
-              name="Aditya Kumar Kansaljiva"
-              rating="4.5"
-              text="Great service, but there's room for improvement."
+              name="Samuel Ashadeep"
+              rating="4.4"
+              text="A stunning, user-friendly website was delivered by Befog, enhancing our brand and online presence effortlessly. Their expertise is highly commendable."
             />
             <Testimonial
-              name="Aditya Kumar Kansaljiva"
+              name="Joe Smith"
               rating="4.5"
-              text="The experience was okay, could be better."
+              text="A highly functional and user-friendly app was delivered by Befog, improving our business efficiency and customer experience. Their professionalism is greatly appreciated."
             />
           </div>
         </div>
