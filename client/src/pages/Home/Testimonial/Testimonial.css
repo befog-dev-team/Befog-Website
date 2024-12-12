@@ -100,8 +100,11 @@
 
 @media (max-width: 480px) {
   .testimonial {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 100%;
+    flex-direction: column;
+    max-width: 80%;
     padding: 10px;
     margin: 8px auto;
   }
