@@ -1,28 +1,41 @@
+/* Testimonials Container */
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* Single row for larger screens */
+  gap: 20px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Individual Testimonial Card */
 .testimonial {
   background-color: transparent;
   padding: 20px;
-  margin: 15px auto;
   border-radius: 10px;
   text-align: center;
   color: #333;
-  max-width: 90%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1;
+  max-width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.testimonial:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Testimonial Content Section */
 .testimonial-content {
-  background-color: #D9D9D90D;
-  padding: 70px;
+  background-color: rgba(217, 217, 217, 0.05);
+  padding: 20px;
   border-radius: 8px;
   margin-bottom: 15px;
   position: relative;
-  width: 100%;
-  height: auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #FFFFFF80;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .testimonial-content:hover {
@@ -43,6 +56,7 @@
   color: #ccc;
 }
 
+/* Testimonial Footer Section */
 .testimonial-footer {
   display: flex;
   align-items: center;
@@ -79,35 +93,35 @@
   color: #ffa500;
 }
 
-@media (max-width: 768px) {
+/* Responsive Design */
+
+/* Tablet Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .testimonials {
+    flex-wrap: wrap; /* Wrap into multiple rows */
+    justify-content: space-around;
+  }
+
   .testimonial {
-    padding: 15px;
-    margin: 10px auto;
-  }
-
-  .testimonial-content {
-    padding: 15px;
-  }
-
-  .quote-mark {
-    font-size: 1.5rem;
-  }
-
-  .testimonial-content p {
-    font-size: 0.95rem;
+    max-width: 45%; /* Two columns */
+    margin-bottom: 20px;
   }
 }
 
+/* Mobile Screens (max-width: 480px) */
 @media (max-width: 480px) {
+  .testimonials {
+    flex-direction: column; /* Stack vertically */
+    gap: 15px;
+  }
+
   .testimonial {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-    margin: 8px auto;
+    max-width: 100%; /* Full width */
+    padding: 15px;
   }
 
   .testimonial-content {
-    padding: 10px;
+    padding: 15px;
   }
 
   .quote-mark {
@@ -119,7 +133,7 @@
   }
 
   .testimonial-footer {
-    flex-direction: column;
+    flex-direction: column; /* Stack footer elements */
     gap: 8px;
   }
 }
