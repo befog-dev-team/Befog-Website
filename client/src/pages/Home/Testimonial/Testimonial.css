@@ -100,19 +100,14 @@
 
 @media (max-width: 480px) {
   .testimonial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    flex-direction: column;
     max-width: 100%;
-    padding: 8px;
-    margin: 5px auto;
+    padding: 10px;
+    margin: 8px auto;
   }
 
   .testimonial-content {
-    padding: 8px;
-    border-radius: 5px;
+    padding: 10px;
   }
 
   .quote-mark {
@@ -120,12 +115,11 @@
   }
 
   .testimonial-content p {
-    font-size: clamp(0.85rem, 1vw, 0.9rem);
+    font-size: 0.9rem;
   }
 
   .testimonial-footer {
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
   }
 }
-
