@@ -103,7 +103,7 @@
   }
 
   .testimonial {
-    max-width: 45%; /* Two columns */
+    max-width: 100%; /* Two columns */
     margin-bottom: 20px;
   }
 }
